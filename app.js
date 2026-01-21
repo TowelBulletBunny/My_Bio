@@ -35,3 +35,15 @@ document.body.style.transition = 'opacity 0.8s ease-in';
 window.addEventListener('DOMContentLoaded', () => {
     document.body.style.opacity = '1';
 });
+
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.style.padding = '5px 60px';
+        header.style.background = 'rgba(7, 11, 20, 0.95)';
+    } else {
+        header.style.padding = '10px 60px';
+        header.style.background = 'rgba(15, 23, 42, 0.9)';
+    }
+});
+
