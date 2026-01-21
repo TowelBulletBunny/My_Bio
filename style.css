@@ -182,3 +182,99 @@ footer {
     }
 }
 
+/* --- Carousel Style --- */
+.carousel-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 30px;
+}
+
+.carousel-item {
+    min-width: 450px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.carousel-item:hover {
+    transform: scale(1.02);
+}
+
+.project-card-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    color: white;
+}
+
+.badge {
+    background: var(--primary-color);
+    color: black;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/* --- About Grid & Glass Style --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+    width: 100%;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.status-indicator {
+    color: #00ff88;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.media-item {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    background: rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.media-item img {
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .carousel-item { min-width: 300px; }
+}
