@@ -3,39 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects | CYX</title>
+    <title>My Lab | Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">CYX<span>.dev</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="My_Projects.html">Projects</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-        </nav>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="My_Projects.html">Projects</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul></nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>My Lab</h1>
-            <p>Check out the games and prototypes I've been working on.</p>
+        <section class="project-header">
+            <h1>Development Log</h1>
+            <p>A look into the worlds I'm building.</p>
         </section>
 
-        <div class="games-list">
-            <div class="game">
-                <div class="status-badge">In Progress</div>
-                <h3>Project: Neon Runner</h3>
-                <p>A high-octane parkour game built on the Roblox engine featuring synthwave aesthetics.</p>
-                <button>Coming Soon</button>
-            </div>
-            <div class="game">
-                <div class="status-badge">Concept</div>
-                <h3>Survival Islands</h3>
-                <p>A multiplayer survival game where the environment changes based on player choices.</p>
-                <button>View DevLog</button>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <div class="project-card-inner">
+                        <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&w=800&q=80" alt="Cyberpunk Project">
+                        <div class="project-overlay">
+                            <h3>Project: NEON VELOCITY</h3>
+                            <p>A high-speed racing game with custom physics and drifting mechanics.</p>
+                            <span class="badge">Luau Scripting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="project-card-inner">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Horror Project">
+                        <div class="project-overlay">
+                            <h3>ABYSSAL ECHOES</h3>
+                            <p>Episodic horror inspired by Piggy. Solving the mystery of a deserted research lab.</p>
+                            <span class="badge">Environmental Art</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="project-card-inner">
+                        <img src="https://images.unsplash.com/photo-1627242131604-b003246b5ba0?auto=format&fit=crop&w=800&q=80" alt="Minigame Project">
+                        <div class="project-overlay">
+                            <h3>CHAOS PARTY</h3>
+                            <p>A round-based minigame collection focusing on chaotic physics and player interaction.</p>
+                            <span class="badge">UI Design</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
